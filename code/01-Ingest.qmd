@@ -1,0 +1,134 @@
+---
+title: "Ingest"
+format: html
+---
+
+## Airports 2022
+
+Busiest airports - from [Wikipedia]("https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_Europe")
+
+```{python}
+import pandas as pd
+import re
+
+df = pd.read_excel("data/airports_2022.xlsx")
+```
+
+Data cleaning
+
+- tidy up numbers
+
+```{python}
+df['passengers'] = df['passengers'].apply(lambda x: int(re.sub('\[.*?\]|,', '', x)))
+
+```
+
+Quick viz.
+
+```{python}
+import altair as alt
+
+# sort by passengers and select top 15 airports
+df_top15 = df.sort_values('passengers', ascending=False).head(15)
+
+# create bar chart using Altair
+chart = alt.Chart(df_top15).mark_bar().encode(
+    y=alt.Y('airport:N', sort='-x'),
+    x=alt.X('passengers:Q')
+)
+```
+
+```{python}
+from IPython.display import display
+
+# display the chart
+display(chart)
+```
+
+## API 
+
+```{python}
+import os
+import openai
+import pandas as pd
+import yaml
+import json
+
+with open("config.yml", "r") as f:
+    config = yaml.safe_load(f)
+
+openai.api_key = config["default"]["key"]
+```
+
+Try simple: distance first.
+
+```{python}
+
+def get_distance(airport):
+  print(f"Augmenting {airport[:100]}\n")
+  distance_object = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=[
+                    {"role": "system", "content": "You are an expert on transit in Europe."},
+
+      {"role": "user", "content":  f"How far is {airport} from the city center?\nDo not include any explanations, only provide a  RFC8259 compliant JSON response with the key distance_km"}
+    ]
+  ).choices[0].message.content.strip()
+  return distance_object
+
+
+test = get_distance(airport="London Heathrow airport")
+
+json.loads(test)
+
+```
+
+Try a bit more complexity
+
+```{python}
+prompt = "Complete the following JSON about London Heathrow Airport\n{ '<Airport Name>': { 'location': '<Distance> from <City Name>'s city center', 'transportation': [ { 'mode': '<Transportation Mode>', 'name': '<Transportation Name>', 'time': '<Travel Time>', 'frequency': '<Frequency of Service>', 'fare': { 'one-way': '<One-Way Fare>', 'return': '<Return Fare>', 'estimate': '<Fare Estimate>' } } // Add additional transportation options as needed ] } } Only provide a  RFC8259 compliant JSON response"
+
+
+def get_distance(airport):
+  print(f"Augmenting {airport[:100]}\n")
+  distance_object = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=[
+      {"role": "system", "content": "You are an expert on transit in Europe."},
+
+      {"role": "user", "content":  prompt}
+    ]
+  ).choices[0].message.content.strip()
+  return distance_object
+
+
+test = get_distance(airport="London Heathrow airport")
+
+json.loads(test)
+```
+
+
+
+One more
+
+```{python}
+prompt = "{ 'transportation_modes': [ { 'transportation_mode': '', 'transportation_name': '', 'travel_time': '', 'frequency_of_service': '', 'one_way_fare': '' }, { 'transportation_mode': '', 'transportation_name': '', 'travel_time': '', 'frequency_of_service': '', 'one_way_fare': '' }, { 'transportation_mode': '', 'transportation_name': '', 'travel_time': '', 'frequency_of_service': '', 'one_way_fare': '' } ] }"
+
+def get_distance(airport):
+  print(f"Augmenting {airport[:100]}\n")
+  distance_object = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=[
+      {"role": "system", "content": "You are an expert on transit in Europe."},
+
+      {"role": "user", "content":  f"Complete the following JSON about travelling from {airport} to the city center\n{prompt}\nOnly provide a  RFC8259 compliant JSON response"}
+    ]
+  ).choices[0].message.content.strip()
+  return distance_object
+
+
+test = get_distance(airport="Munich Airport")
+
+json.loads(test)
+```
+
