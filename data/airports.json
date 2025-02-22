@@ -1,0 +1,1275 @@
+{
+  "airports": [
+    {
+      "name": "Heathrow Airport",
+      "city": "London",
+      "distance_km": 24,
+      "airport_coords": { "lat": 51.4700, "lon": -0.4543 },
+      "city_coords": { "lat": 51.5074, "lon": -0.1278 },
+      "transit_options": [
+        {
+          "mode": "Heathrow Express",
+          "transit_type": "train",
+          "travel_time_minutes": 20,
+          "frequency": "every 15 minutes",
+          "fare_euros": 25
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 50,
+          "frequency": "on-demand",
+          "fare_euros": 65
+        },
+        {
+          "mode": "Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 55,
+          "frequency": "every 30 minutes",
+          "fare_euros": 8
+        }
+      ]
+    },
+    {
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "distance_km": 35,
+      "airport_coords": { "lat": 41.2753, "lon": 28.7519 },
+      "city_coords": { "lat": 41.0082, "lon": 28.9784 },
+      "transit_options": [
+        {
+          "mode": "Metro (M11)",
+          "transit_type": "metro",
+          "travel_time_minutes": 35,
+          "frequency": "every 10 minutes",
+          "fare_euros": 3
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 55,
+          "frequency": "on-demand",
+          "fare_euros": 15
+        }
+      ]
+    },
+    {
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "distance_km": 25,
+      "airport_coords": { "lat": 49.0097, "lon": 2.5479 },
+      "city_coords": { "lat": 48.8566, "lon": 2.3522 },
+      "transit_options": [
+        {
+          "mode": "RER B Train",
+          "transit_type": "train",
+          "travel_time_minutes": 40,
+          "frequency": "every 10 minutes",
+          "fare_euros": 10
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 55,
+          "frequency": "on-demand",
+          "fare_euros": 55
+        },
+        {
+          "mode": "Roissybus",
+          "transit_type": "bus",
+          "travel_time_minutes": 60,
+          "frequency": "every 15 minutes",
+          "fare_euros": 12
+        }
+      ]
+    },
+    {
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "distance_km": 9,
+      "airport_coords": { "lat": 52.3105, "lon": 4.7683 },
+      "city_coords": { "lat": 52.3676, "lon": 4.9041 },
+      "transit_options": [
+        {
+          "mode": "Train",
+          "transit_type": "train",
+          "travel_time_minutes": 18,
+          "frequency": "every 10 minutes",
+          "fare_euros": 5
+        },
+        {
+          "mode": "Airport Express Bus 397",
+          "transit_type": "bus",
+          "travel_time_minutes": 30,
+          "frequency": "every 10 minutes",
+          "fare_euros": 6.5
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 25,
+          "frequency": "on-demand",
+          "fare_euros": 35
+        }
+      ]
+    },
+    {
+      "name": "Adolfo Suárez Madrid–Barajas Airport",
+      "city": "Madrid",
+      "distance_km": 12,
+      "airport_coords": { "lat": 40.4983, "lon": -3.5676 },
+      "city_coords": { "lat": 40.4168, "lon": -3.7038 },
+      "transit_options": [
+        {
+          "mode": "Metro (Line 8)",
+          "transit_type": "metro",
+          "travel_time_minutes": 15,
+          "frequency": "every 5 minutes",
+          "fare_euros": 1.5
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 25,
+          "frequency": "on-demand",
+          "fare_euros": 30
+        },
+        {
+          "mode": "Airport Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 30,
+          "frequency": "every 15 minutes",
+          "fare_euros": 5
+        }
+      ]
+    },
+    {
+      "name": "Frankfurt am Main Airport",
+      "city": "Frankfurt",
+      "distance_km": 12,
+      "airport_coords": { "lat": 50.0379, "lon": 8.5622 },
+      "city_coords": { "lat": 50.1109, "lon": 8.6821 },
+      "transit_options": [
+        {
+          "mode": "S-Bahn",
+          "transit_type": "train",
+          "travel_time_minutes": 15,
+          "frequency": "every 10 minutes",
+          "fare_euros": 5
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 25,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        },
+        {
+          "mode": "Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 30,
+          "frequency": "every 20 minutes",
+          "fare_euros": 8
+        }
+      ]
+    },
+    {
+      "name": "Josep Tarradellas Barcelona–El Prat Airport",
+      "city": "Barcelona",
+      "distance_km": 12,
+      "airport_coords": { "lat": 41.2974, "lon": 2.0833 },
+      "city_coords": { "lat": 41.3851, "lon": 2.1734 },
+      "transit_options": [
+        {
+          "mode": "Rodalies Train (Line R2)",
+          "transit_type": "train",
+          "travel_time_minutes": 25,
+          "frequency": "every 30 minutes",
+          "fare_euros": 4
+        },
+        {
+          "mode": "Metro (Line 9)",
+          "transit_type": "metro",
+          "travel_time_minutes": 30,
+          "frequency": "every 10 minutes",
+          "fare_euros": 3
+        },
+        {
+          "mode": "Aerobús",
+          "transit_type": "bus",
+          "travel_time_minutes": 35,
+          "frequency": "every 10 minutes",
+          "fare_euros": 6.5
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 25,
+          "frequency": "on-demand",
+          "fare_euros": 30
+        }
+      ]
+    },
+    {
+      "name": "Gatwick Airport",
+      "city": "London",
+      "distance_km": 45,
+      "airport_coords": { "lat": 51.1537, "lon": -0.1821 },
+      "city_coords": { "lat": 51.5074, "lon": -0.1278 },
+      "transit_options": [
+        {
+          "mode": "Gatwick Express",
+          "transit_type": "train",
+          "travel_time_minutes": 30,
+          "frequency": "every 15 minutes",
+          "fare_euros": 25
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 75,
+          "frequency": "on-demand",
+          "fare_euros": 80
+        },
+        {
+          "mode": "Coach",
+          "transit_type": "bus",
+          "travel_time_minutes": 80,
+          "frequency": "every 30 minutes",
+          "fare_euros": 10
+        }
+      ]
+    },
+    {
+      "name": "Leonardo da Vinci–Fiumicino Airport",
+      "city": "Rome",
+      "distance_km": 32,
+      "airport_coords": { "lat": 41.8003, "lon": 12.2389 },
+      "city_coords": { "lat": 41.9028, "lon": 12.4964 },
+      "transit_options": [
+        {
+          "mode": "Leonardo Express",
+          "transit_type": "train",
+          "travel_time_minutes": 32,
+          "frequency": "every 30 minutes",
+          "fare_euros": 14
+        },
+        {
+          "mode": "Terravision Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 45,
+          "frequency": "every 30 minutes",
+          "fare_euros": 6
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 50,
+          "frequency": "on-demand",
+          "fare_euros": 48
+        }
+      ]
+    },
+    {
+      "name": "Munich Airport",
+      "city": "Munich",
+      "distance_km": 28,
+      "airport_coords": { "lat": 48.3538, "lon": 11.7861 },
+      "city_coords": { "lat": 48.1374, "lon": 11.5755 },
+      "transit_options": [
+        {
+          "mode": "S-Bahn (S1/S8)",
+          "transit_type": "train",
+          "travel_time_minutes": 40,
+          "frequency": "every 10 minutes",
+          "fare_euros": 11
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 40,
+          "frequency": "on-demand",
+          "fare_euros": 50
+        },
+        {
+          "mode": "Airport Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 45,
+          "frequency": "every 20 minutes",
+          "fare_euros": 12
+        }
+      ]
+    },
+    {
+      "name": "Sheremetyevo International Airport",
+      "city": "Moscow",
+      "distance_km": 30,
+      "airport_coords": { "lat": 55.9726, "lon": 37.4146 },
+      "city_coords": { "lat": 55.7558, "lon": 37.6173 },
+      "transit_options": [
+        {
+          "mode": "Aeroexpress",
+          "transit_type": "train",
+          "travel_time_minutes": 35,
+          "frequency": "every 30 minutes",
+          "fare_euros": 10
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 50,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        },
+        {
+          "mode": "Shuttle Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 50,
+          "frequency": "every 30 minutes",
+          "fare_euros": 5
+        }
+      ]
+    },
+    {
+      "name": "Lisbon Airport",
+      "city": "Lisbon",
+      "distance_km": 7,
+      "airport_coords": { "lat": 38.7813, "lon": -9.1359 },
+      "city_coords": { "lat": 38.7223, "lon": -9.1393 },
+      "transit_options": [
+        {
+          "mode": "Metro (Red Line)",
+          "transit_type": "metro",
+          "travel_time_minutes": 20,
+          "frequency": "every 6 minutes",
+          "fare_euros": 1.5
+        },
+        {
+          "mode": "Local Bus (Carris)",
+          "transit_type": "bus",
+          "travel_time_minutes": 30,
+          "frequency": "every 15 minutes",
+          "fare_euros": 2.15
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 18,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        }
+      ]
+    },
+    {
+      "name": "Dublin Airport",
+      "city": "Dublin",
+      "distance_km": 10,
+      "airport_coords": { "lat": 53.4213, "lon": -6.2701 },
+      "city_coords": { "lat": 53.3498, "lon": -6.2603 },
+      "transit_options": [
+        {
+          "mode": "Airlink Express Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 30,
+          "frequency": "every 15 minutes",
+          "fare_euros": 7
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 25,
+          "frequency": "on-demand",
+          "fare_euros": 35
+        }
+      ]
+    },
+    {
+      "name": "Orly Airport",
+      "city": "Paris",
+      "distance_km": 13,
+      "airport_coords": { "lat": 48.7262, "lon": 2.3652 },
+      "city_coords": { "lat": 48.8566, "lon": 2.3522 },
+      "transit_options": [
+        {
+          "mode": "Orlyval + RER B",
+          "transit_type": "train",
+          "travel_time_minutes": 30,
+          "frequency": "every 10 minutes",
+          "fare_euros": 12
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 35,
+          "frequency": "on-demand",
+          "fare_euros": 40
+        },
+        {
+          "mode": "Orlybus",
+          "transit_type": "bus",
+          "travel_time_minutes": 40,
+          "frequency": "every 15 minutes",
+          "fare_euros": 9
+        }
+      ]
+    },
+    {
+      "name": "Palma de Mallorca Airport",
+      "city": "Palma",
+      "distance_km": 8,
+      "airport_coords": { "lat": 39.5696, "lon": 2.6502 },
+      "city_coords": { "lat": 39.5696, "lon": 2.6502 },
+      "transit_options": [
+        {
+          "mode": "Airport Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 25,
+          "frequency": "every 15 minutes",
+          "fare_euros": 4
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 18,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        }
+      ]
+    },
+    {
+      "name": "Vienna International Airport",
+      "city": "Vienna",
+      "distance_km": 18,
+      "airport_coords": { "lat": 48.1103, "lon": 16.5697 },
+      "city_coords": { "lat": 48.2082, "lon": 16.3738 },
+      "transit_options": [
+        {
+          "mode": "City Airport Train (CAT)",
+          "transit_type": "train",
+          "travel_time_minutes": 16,
+          "frequency": "every 30 minutes",
+          "fare_euros": 14.9
+        },
+        {
+          "mode": "S-Bahn (S7)",
+          "transit_type": "train",
+          "travel_time_minutes": 23,
+          "frequency": "every 30 minutes",
+          "fare_euros": 4.3
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 25,
+          "frequency": "on-demand",
+          "fare_euros": 30
+        }
+      ]
+    },
+    {
+      "name": "Zurich Airport",
+      "city": "Zürich",
+      "distance_km": 10,
+      "airport_coords": { "lat": 47.4647, "lon": 8.5492 },
+      "city_coords": { "lat": 47.3769, "lon": 8.5417 },
+      "transit_options": [
+        {
+          "mode": "Train (S-Bahn)",
+          "transit_type": "train",
+          "travel_time_minutes": 12,
+          "frequency": "every 10 minutes",
+          "fare_euros": 6
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 18,
+          "frequency": "on-demand",
+          "fare_euros": 40
+        },
+        {
+          "mode": "Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 20,
+          "frequency": "every 15 minutes",
+          "fare_euros": 4
+        }
+      ]
+    },
+    {
+      "name": "Athens International Airport",
+      "city": "Athens",
+      "distance_km": 20,
+      "airport_coords": { "lat": 37.9364, "lon": 23.9445 },
+      "city_coords": { "lat": 37.9838, "lon": 23.7275 },
+      "transit_options": [
+        {
+          "mode": "Metro (Line 3)",
+          "transit_type": "metro",
+          "travel_time_minutes": 40,
+          "frequency": "every 30 minutes",
+          "fare_euros": 10
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 40,
+          "frequency": "on-demand",
+          "fare_euros": 35
+        },
+        {
+          "mode": "Express Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 60,
+          "frequency": "every 20 minutes",
+          "fare_euros": 6
+        }
+      ]
+    },
+    {
+      "name": "Manchester Airport",
+      "city": "Manchester",
+      "distance_km": 14,
+      "airport_coords": { "lat": 53.3598, "lon": -2.2724 },
+      "city_coords": { "lat": 53.4808, "lon": -2.2426 },
+      "transit_options": [
+        {
+          "mode": "Train (Express)",
+          "transit_type": "train",
+          "travel_time_minutes": 20,
+          "frequency": "every 15 minutes",
+          "fare_euros": 10
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 25,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        },
+        {
+          "mode": "Coach",
+          "transit_type": "bus",
+          "travel_time_minutes": 35,
+          "frequency": "every 20 minutes",
+          "fare_euros": 6
+        }
+      ]
+    },
+    {
+      "name": "London Stansted Airport",
+      "city": "London",
+      "distance_km": 48,
+      "airport_coords": { "lat": 51.8840, "lon": 0.2350 },
+      "city_coords": { "lat": 51.5074, "lon": -0.1278 },
+      "transit_options": [
+        {
+          "mode": "Stansted Express",
+          "transit_type": "train",
+          "travel_time_minutes": 45,
+          "frequency": "every 15 minutes",
+          "fare_euros": 20
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 80,
+          "frequency": "on-demand",
+          "fare_euros": 75
+        },
+        {
+          "mode": "Coach",
+          "transit_type": "bus",
+          "travel_time_minutes": 75,
+          "frequency": "every 30 minutes",
+          "fare_euros": 10
+        }
+      ]
+    },
+    {
+      "name": "Copenhagen Airport",
+      "city": "Copenhagen",
+      "distance_km": 8,
+      "airport_coords": { "lat": 55.6181, "lon": 12.6560 },
+      "city_coords": { "lat": 55.6761, "lon": 12.5683 },
+      "transit_options": [
+        {
+          "mode": "Metro (M2)",
+          "transit_type": "metro",
+          "travel_time_minutes": 15,
+          "frequency": "every 4-6 minutes",
+          "fare_euros": 4
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 18,
+          "frequency": "on-demand",
+          "fare_euros": 30
+        },
+        {
+          "mode": "Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 25,
+          "frequency": "every 15 minutes",
+          "fare_euros": 3
+        }
+      ]
+    },
+    {
+      "name": "Malpensa Airport",
+      "city": "Milan",
+      "distance_km": 50,
+      "airport_coords": { "lat": 45.6306, "lon": 8.7231 },
+      "city_coords": { "lat": 45.4642, "lon": 9.1900 },
+      "transit_options": [
+        {
+          "mode": "Malpensa Express",
+          "transit_type": "train",
+          "travel_time_minutes": 50,
+          "frequency": "every 30 minutes",
+          "fare_euros": 13
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 75,
+          "frequency": "on-demand",
+          "fare_euros": 70
+        },
+        {
+          "mode": "Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 60,
+          "frequency": "every 30 minutes",
+          "fare_euros": 8
+        }
+      ]
+    },
+    {
+      "name": "Oslo Airport, Gardermoen",
+      "city": "Oslo",
+      "distance_km": 50,
+      "airport_coords": { "lat": 60.1939, "lon": 11.1004 },
+      "city_coords": { "lat": 59.9139, "lon": 10.7522 },
+      "transit_options": [
+        {
+          "mode": "Flytoget",
+          "transit_type": "train",
+          "travel_time_minutes": 19,
+          "frequency": "every 10 minutes",
+          "fare_euros": 10
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 40,
+          "frequency": "on-demand",
+          "fare_euros": 50
+        },
+        {
+          "mode": "Airport Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 60,
+          "frequency": "every 30 minutes",
+          "fare_euros": 6
+        }
+      ]
+    },
+    {
+      "name": "Berlin Brandenburg Airport",
+      "city": "Berlin",
+      "distance_km": 20,
+      "airport_coords": { "lat": 52.3667, "lon": 13.5033 },
+      "city_coords": { "lat": 52.5200, "lon": 13.4050 },
+      "transit_options": [
+        {
+          "mode": "Regional Train (FEX)",
+          "transit_type": "train",
+          "travel_time_minutes": 30,
+          "frequency": "every 30 minutes",
+          "fare_euros": 3.5
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 35,
+          "frequency": "on-demand",
+          "fare_euros": 30
+        },
+        {
+          "mode": "Shuttle Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 40,
+          "frequency": "every 20 minutes",
+          "fare_euros": 10
+        }
+      ]
+    },
+    {
+      "name": "Warsaw Chopin Airport",
+      "city": "Warsaw",
+      "distance_km": 10,
+      "airport_coords": { "lat": 52.1657, "lon": 20.9671 },
+      "city_coords": { "lat": 52.2297, "lon": 21.0122 },
+      "transit_options": [
+        {
+          "mode": "SKM Train",
+          "transit_type": "train",
+          "travel_time_minutes": 20,
+          "frequency": "every 15 minutes",
+          "fare_euros": 2.5
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 25,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        },
+        {
+          "mode": "Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 25,
+          "frequency": "every 15 minutes",
+          "fare_euros": 2.5
+        }
+      ]
+    },
+    {
+      "name": "Geneva Airport",
+      "city": "Geneva",
+      "distance_km": 4,
+      "airport_coords": { "lat": 46.2380, "lon": 6.1089 },
+      "city_coords": { "lat": 46.2044, "lon": 6.1432 },
+      "transit_options": [
+        {
+          "mode": "Train",
+          "transit_type": "train",
+          "travel_time_minutes": 7,
+          "frequency": "every 30 minutes",
+          "fare_euros": 5
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 10,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        },
+        {
+          "mode": "Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 15,
+          "frequency": "every 20 minutes",
+          "fare_euros": 3
+        }
+      ]
+    },
+    {
+      "name": "Luton Airport",
+      "city": "London",
+      "distance_km": 55,
+      "airport_coords": { "lat": 51.8747, "lon": -0.3683 },
+      "city_coords": { "lat": 51.5074, "lon": -0.1278 },
+      "transit_options": [
+        {
+          "mode": "Luton Airport Express",
+          "transit_type": "train",
+          "travel_time_minutes": 35,
+          "frequency": "every 15 minutes",
+          "fare_euros": 15
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 75,
+          "frequency": "on-demand",
+          "fare_euros": 80
+        },
+        {
+          "mode": "Coach",
+          "transit_type": "bus",
+          "travel_time_minutes": 90,
+          "frequency": "every 30 minutes",
+          "fare_euros": 10
+        }
+      ]
+    },
+    {
+      "name": "Orio al Serio Airport",
+      "city": "Bergamo",
+      "distance_km": 45,
+      "airport_coords": { "lat": 45.6739, "lon": 9.7008 },
+      "city_coords": { "lat": 45.6983, "lon": 9.6773 },
+      "transit_options": [
+        {
+          "mode": "Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 60,
+          "frequency": "every 20 minutes",
+          "fare_euros": 5
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 60,
+          "frequency": "on-demand",
+          "fare_euros": 50
+        }
+      ]
+    },
+    {
+      "name": "Alicante–Elche Airport",
+      "city": "Alicante",
+      "distance_km": 9,
+      "airport_coords": { "lat": 38.2824, "lon": -0.5582 },
+      "city_coords": { "lat": 38.3452, "lon": -0.4810 },
+      "transit_options": [
+        {
+          "mode": "Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 20,
+          "frequency": "every 15 minutes",
+          "fare_euros": 3
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 20,
+          "frequency": "on-demand",
+          "fare_euros": 20
+        }
+      ]
+    },
+    {
+      "name": "Helsinki Airport",
+      "city": "Helsinki",
+      "distance_km": 17,
+      "airport_coords": { "lat": 60.3172, "lon": 24.9633 },
+      "city_coords": { "lat": 60.1699, "lon": 24.9384 },
+      "transit_options": [
+        {
+          "mode": "Train",
+          "transit_type": "train",
+          "travel_time_minutes": 30,
+          "frequency": "every 10 minutes",
+          "fare_euros": 4
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 25,
+          "frequency": "on-demand",
+          "fare_euros": 30
+        },
+        {
+          "mode": "Bus (Finnair City Bus)",
+          "transit_type": "bus",
+          "travel_time_minutes": 30,
+          "frequency": "every 15 minutes",
+          "fare_euros": 5
+        }
+      ]
+    },
+    {
+      "name": "Porto Airport",
+      "city": "Porto",
+      "distance_km": 11,
+      "airport_coords": { "lat": 41.2420, "lon": -8.6814 },
+      "city_coords": { "lat": 41.1579, "lon": -8.6291 },
+      "transit_options": [
+        {
+          "mode": "Metro (Line E)",
+          "transit_type": "metro",
+          "travel_time_minutes": 30,
+          "frequency": "every 10 minutes",
+          "fare_euros": 2
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 20,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        },
+        {
+          "mode": "Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 30,
+          "frequency": "every 15 minutes",
+          "fare_euros": 3
+        }
+      ]
+    },
+    {
+      "name": "Budapest Ferenc Liszt International Airport",
+      "city": "Budapest",
+      "distance_km": 16,
+      "airport_coords": { "lat": 47.4395, "lon": 19.2619 },
+      "city_coords": { "lat": 47.4979, "lon": 19.0402 },
+      "transit_options": [
+        {
+          "mode": "100E Shuttle Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 30,
+          "frequency": "every 15 minutes",
+          "fare_euros": 3
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 25,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        }
+      ]
+    },
+    {
+      "name": "Henri Coandă International Airport",
+      "city": "Bucharest",
+      "distance_km": 17,
+      "airport_coords": { "lat": 44.5711, "lon": 26.0857 },
+      "city_coords": { "lat": 44.4268, "lon": 26.1025 },
+      "transit_options": [
+        {
+          "mode": "Henri Coandă Express Train",
+          "transit_type": "train",
+          "travel_time_minutes": 20,
+          "frequency": "every 30 minutes",
+          "fare_euros": 4
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 30,
+          "frequency": "on-demand",
+          "fare_euros": 30
+        },
+        {
+          "mode": "Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 30,
+          "frequency": "every 20 minutes",
+          "fare_euros": 2.5
+        }
+      ]
+    },
+    {
+      "name": "Vnukovo International Airport",
+      "city": "Moscow",
+      "distance_km": 28,
+      "airport_coords": { "lat": 55.5911, "lon": 37.2617 },
+      "city_coords": { "lat": 55.7558, "lon": 37.6173 },
+      "transit_options": [
+        {
+          "mode": "Aeroexpress",
+          "transit_type": "train",
+          "travel_time_minutes": 30,
+          "frequency": "every 30 minutes",
+          "fare_euros": 10
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 45,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        },
+        {
+          "mode": "Shuttle Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 45,
+          "frequency": "every 30 minutes",
+          "fare_euros": 5
+        }
+      ]
+    },
+    {
+      "name": "Edinburgh Airport",
+      "city": "Edinburgh",
+      "distance_km": 13,
+      "airport_coords": { "lat": 55.9500, "lon": -3.3725 },
+      "city_coords": { "lat": 55.9533, "lon": -3.1883 },
+      "transit_options": [
+        {
+          "mode": "Tram",
+          "transit_type": "tram",
+          "travel_time_minutes": 30,
+          "frequency": "every 7 minutes",
+          "fare_euros": 6
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 20,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        },
+        {
+          "mode": "Airlink Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 30,
+          "frequency": "every 15 minutes",
+          "fare_euros": 5
+        }
+      ]
+    },
+    {
+      "name": "Nice Côte d'Azur Airport",
+      "city": "Nice",
+      "distance_km": 7,
+      "airport_coords": { "lat": 43.6584, "lon": 7.2159 },
+      "city_coords": { "lat": 43.7102, "lon": 7.2620 },
+      "transit_options": [
+        {
+          "mode": "Tram (Line 2)",
+          "transit_type": "tram",
+          "travel_time_minutes": 15,
+          "frequency": "every 10 minutes",
+          "fare_euros": 1.5
+        },
+        {
+          "mode": "Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 20,
+          "frequency": "every 10 minutes",
+          "fare_euros": 2
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 15,
+          "frequency": "on-demand",
+          "fare_euros": 20
+        }
+      ]
+    },
+    {
+      "name": "Václav Havel Airport Prague",
+      "city": "Prague",
+      "distance_km": 17,
+      "airport_coords": { "lat": 50.1008, "lon": 14.26 },
+      "city_coords": { "lat": 50.0755, "lon": 14.4378 },
+      "transit_options": [
+        {
+          "mode": "Bus + Metro",
+          "transit_type": "bus",
+          "travel_time_minutes": 35,
+          "frequency": "bus every 10 minutes, metro frequent",
+          "fare_euros": 3
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 30,
+          "frequency": "on-demand",
+          "fare_euros": 30
+        }
+      ]
+    },
+    {
+      "name": "Hamburg Airport",
+      "city": "Hamburg",
+      "distance_km": 8,
+      "airport_coords": { "lat": 53.6304, "lon": 9.9882 },
+      "city_coords": { "lat": 53.5511, "lon": 9.9937 },
+      "transit_options": [
+        {
+          "mode": "S-Bahn",
+          "transit_type": "train",
+          "travel_time_minutes": 25,
+          "frequency": "every 10 minutes",
+          "fare_euros": 3.5
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 20,
+          "frequency": "on-demand",
+          "fare_euros": 20
+        },
+        {
+          "mode": "Shuttle Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 30,
+          "frequency": "every 15 minutes",
+          "fare_euros": 4
+        }
+      ]
+    },
+    {
+      "name": "Naples Airport",
+      "city": "Naples",
+      "distance_km": 7,
+      "airport_coords": { "lat": 40.8869, "lon": 14.2890 },
+      "city_coords": { "lat": 40.8518, "lon": 14.2681 },
+      "transit_options": [
+        {
+          "mode": "Alibus Shuttle",
+          "transit_type": "bus",
+          "travel_time_minutes": 20,
+          "frequency": "every 20 minutes",
+          "fare_euros": 4
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 15,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        },
+        {
+          "mode": "Local Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 25,
+          "frequency": "every 15 minutes",
+          "fare_euros": 2.5
+        }
+      ]
+    },
+    {
+      "name": "Birmingham Airport",
+      "city": "Birmingham",
+      "distance_km": 13,
+      "airport_coords": { "lat": 52.4539, "lon": -1.7480 },
+      "city_coords": { "lat": 52.4862, "lon": -1.8904 },
+      "transit_options": [
+        {
+          "mode": "Train (Birmingham International)",
+          "transit_type": "train",
+          "travel_time_minutes": 12,
+          "frequency": "every 30 minutes",
+          "fare_euros": 10
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 15,
+          "frequency": "on-demand",
+          "fare_euros": 25
+        },
+        {
+          "mode": "Coach",
+          "transit_type": "bus",
+          "travel_time_minutes": 20,
+          "frequency": "every 30 minutes",
+          "fare_euros": 6
+        }
+      ]
+    },
+    {
+      "name": "Venice Marco Polo Airport",
+      "city": "Venice",
+      "distance_km": 13,
+      "airport_coords": { "lat": 45.5053, "lon": 12.3519 },
+      "city_coords": { "lat": 45.4408, "lon": 12.3155 },
+      "transit_options": [
+        {
+          "mode": "Bus (ATVO)",
+          "transit_type": "bus",
+          "travel_time_minutes": 20,
+          "frequency": "every 15 minutes",
+          "fare_euros": 8
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 20,
+          "frequency": "on-demand",
+          "fare_euros": 40
+        },
+        {
+          "mode": "Water Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 15,
+          "frequency": "on-demand",
+          "fare_euros": 60
+        }
+      ]
+    },
+    {
+      "name": "Marseille Provence Airport",
+      "city": "Marseille",
+      "distance_km": 27,
+      "airport_coords": { "lat": 43.4394, "lon": 5.2214 },
+      "city_coords": { "lat": 43.2965, "lon": 5.3698 },
+      "transit_options": [
+        {
+          "mode": "Shuttle Bus (Transdev)",
+          "transit_type": "bus",
+          "travel_time_minutes": 30,
+          "frequency": "every 30 minutes",
+          "fare_euros": 7
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 35,
+          "frequency": "on-demand",
+          "fare_euros": 40
+        },
+        {
+          "mode": "Train Shuttle (if available)",
+          "transit_type": "train",
+          "travel_time_minutes": 20,
+          "frequency": "variable",
+          "fare_euros": 5
+        }
+      ]
+    },
+    {
+      "name": "Catania-Fontanarossa Airport",
+      "city": "Catania",
+      "distance_km": 4,
+      "airport_coords": { "lat": 37.4667, "lon": 15.0667 },
+      "city_coords": { "lat": 37.5079, "lon": 15.0830 },
+      "transit_options": [
+        {
+          "mode": "Bus (AST)",
+          "transit_type": "bus",
+          "travel_time_minutes": 15,
+          "frequency": "every 20 minutes",
+          "fare_euros": 2
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 10,
+          "frequency": "on-demand",
+          "fare_euros": 20
+        }
+      ]
+    },
+    {
+      "name": "Lyon–Saint-Exupéry Airport",
+      "city": "Lyon",
+      "distance_km": 25,
+      "airport_coords": { "lat": 45.7256, "lon": 5.0811 },
+      "city_coords": { "lat": 45.7640, "lon": 4.8357 },
+      "transit_options": [
+        {
+          "mode": "Rhônexpress Tram",
+          "transit_type": "tram",
+          "travel_time_minutes": 30,
+          "frequency": "every 15 minutes",
+          "fare_euros": 16
+        },
+        {
+          "mode": "Taxi",
+          "transit_type": "taxi",
+          "travel_time_minutes": 30,
+          "frequency": "on-demand",
+          "fare_euros": 35
+        },
+        {
+          "mode": "Local Bus",
+          "transit_type": "bus",
+          "travel_time_minutes": 40,
+          "frequency": "variable",
+          "fare_euros": 6
+        }
+      ]
+    }
+  ]
+}
