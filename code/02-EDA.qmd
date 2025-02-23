@@ -44,3 +44,14 @@ df = pd.DataFrame(rows)
 
 df
 ```
+
+
+
+```{python}
+# count the distinct airports in df
+df["airport_name"].nunique()
+
+# show these in a table
+df["airport_name"].value_counts()
+
+```
