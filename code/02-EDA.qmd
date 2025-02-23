@@ -1,0 +1,46 @@
+---
+title: "Untitled"
+format: html
+---
+
+## Purpose
+
+Explore the data that I've got from ChatGPT. 
+
+## Load the data
+
+
+```{python}
+import json
+
+# read in the data from data/airports.json
+with open("../data/airports.json") as f:
+    data = json.load(f)
+
+data
+```
+
+
+
+```{python}
+import pandas as pd
+rows = []
+for airport in data['airports']:
+    for option in airport['transit_options']:
+        row = {
+            "airport_name": airport["name"],
+            "city": airport["city"],
+            "distance_km": airport["distance_km"],
+            "mode": option["mode"],
+            "transit_type": option["transit_type"],
+            "travel_time_minutes": option["travel_time_minutes"],
+            "frequency": option["frequency"],
+            "fare_euros": option["fare_euros"],
+            "city_lat": airport["city_coords"]["lat"],
+            "city_lon": airport["city_coords"]["lon"]
+        }
+        rows.append(row)
+df = pd.DataFrame(rows)
+
+df
+```
